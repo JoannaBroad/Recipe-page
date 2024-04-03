@@ -1,7 +1,32 @@
+body {
+  background-color: #f3e5d7;
+}
+
+main {
+  background-color: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2.5rem;
+  width: 46rem;
+}
+figure {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
+  text-align: right;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: black;
+  text-decoration: none;
 }
