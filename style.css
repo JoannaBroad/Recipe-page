@@ -38,6 +38,44 @@ img {
   line-height: 1.5rem;
 }
 
+.prep-time {
+  display: flex;
+  padding: 1.75rem;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  background: #fff7fb;
+}
+.prep-time h2 {
+  font-family: Outfit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #7a284e;
+  margin: 0;
+}
+.custom-bullets {
+  list-style-type: none;
+  padding-left: 1.2em;
+}
+
+.custom-bullets li::before {
+  content: "\2022";
+  color: #7a284e;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+.thicker-text {
+  font-family: Outfit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.prep-time li {
+  font-family: Outfit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
 .attribution {
   font-size: 11px;
   text-align: right;
