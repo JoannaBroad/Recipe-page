@@ -61,7 +61,7 @@ img {
   content: "\2022";
   color: #7a284e;
   display: inline-block;
-  width: 1.5em;
+  width: 2rem;
   margin-left: -1em;
 }
 .thicker-text {
@@ -76,6 +76,28 @@ img {
   font-weight: 400;
   line-height: 2.5rem;
 }
+
+.ingredients h3 {
+  font-family: "Young Serif";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #854632;
+}
+.ingredients li {
+  font-family: Outfit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem; /* 24px */
+}
+.line {
+  border: none;
+  border-top: 1px solid #e3ddd7;
+  width: 90%;
+  margin: 2rem auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: right;
