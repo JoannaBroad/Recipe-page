@@ -1,3 +1,9 @@
+:root {
+  --text-color: #312e2c;
+  --font-serif: "Young Serif";
+  --font-sans: Outfit;
+}
+
 body {
   background-color: #f3e5d7;
 }
@@ -22,18 +28,17 @@ img {
   border-radius: 0.75rem;
 }
 .intro h1 {
-  color: #312e2c;
-  font-family: "Young Serif";
+  color: var(--text-color);
+  font-family: var(--font-serif);
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.5rem;
 }
-.intro p {
+p {
   color: #5f564d;
-  font-family: Outfit;
+  font-family: var(--font-sans);
   font-size: 1rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
 }
@@ -46,60 +51,72 @@ img {
   background: #fff7fb;
 }
 .prep-time h2 {
-  font-family: Outfit;
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 600;
   color: #7a284e;
   margin: 0;
 }
-.custom-bullets {
-  list-style-type: none;
-  padding-left: 1.2em;
+
+.markers {
+  margin: 0;
+  padding: 0;
 }
 
-.custom-bullets li::before {
-  content: "\2022";
-  color: #7a284e;
-  display: inline-block;
-  width: 2rem;
-  margin-left: -1em;
+.markers li {
+  list-style-position: outside;
 }
-.thicker-text {
-  font-family: Outfit;
-  font-size: 1rem;
+
+.markers li::marker {
+  color: #854632;
   font-weight: 700;
-  line-height: 2.5rem;
 }
-.prep-time li {
-  font-family: Outfit;
+
+li {
+  font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 150%;
+  margin: 20px;
+  padding-left: 1rem !important;
 }
 
-.ingredients h3 {
-  font-family: "Young Serif";
+h3 {
+  font-family: var(--font-serif);
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
   color: #854632;
 }
-.ingredients li {
-  font-family: Outfit;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2rem; /* 24px */
-}
+
 .line {
   border: none;
   border-top: 1px solid #e3ddd7;
   width: 90%;
   margin: 2rem auto;
 }
-
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+td:last-child {
+  font-weight: 800;
+  color: #854632;
+}
 .attribution {
-  font-size: 11px;
+  font-family: var(--font-sans);
+  margin-top: 10px;
+  font-size: 0.7rem;
   text-align: right;
 }
 .attribution a {
